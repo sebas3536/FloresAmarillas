@@ -1,0 +1,86 @@
+/* Archivo: css/style.css */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe6f2; 
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.greetings span {
+    font-size: 6rem;
+    font-family: 'Great Vibes', cursive;
+    color: #e91e63; 
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: fadeIn 0.5s forwards;
+}
+
+.greetings span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.greetings span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.greetings span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.greetings span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.description span {
+    font-size: 2.5rem;
+    font-family: 'Great Vibes', cursive;
+    color: #880e4f;
+    margin-top: 20px;
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #e91e63;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ad1457;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
